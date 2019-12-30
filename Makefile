@@ -37,4 +37,4 @@ test:
 # デプロイ
 .PHONY: deploy
 deploy: build
-	docker-compose run functions npm run deplo
+	docker-compose run functions npm run deploy
