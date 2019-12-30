@@ -27,7 +27,8 @@
     "webpack-node-externals": "^1.7.2"
   },
   "scripts": {
-    "start": "NODE_ENV=dev webpack -w",
+    "start": "npm run watch & npm run serve",
+    "watch": "NODE_ENV=dev webpack -w",
     "build": "NODE_ENV=dev webpack",
     "release": "NODE_ENV=prod webpack",
     "serve": "npm run build && firebase serve  -o 0.0.0.0 -p 8080 --only functions",
