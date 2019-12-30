@@ -19,7 +19,6 @@ $ npm install
  ```
  $ npx firebase login
  ```
-npm install --save-dev firebase-functions-test jest
 
 # debug in local with emulating firebase functions
 ```
