@@ -1,7 +1,7 @@
 # firebase functions sample + es6
 This sample is firebase functions using es6
 
-# install
+# Install
 
 ```
 $ git clone https://github.com/glassmonkey/firebase-functions-sample
@@ -9,7 +9,7 @@ $ cd firebase-functions-sample
 $ npm install
 ```
 
-# configure 
+# Configure 
 
 * edit `<your-project-id>` in `.firebaserc`
 ```
@@ -20,7 +20,7 @@ $ npm install
  $ npx firebase login
  ```
 
-# optional configure 
+# Optional configure 
 Using docker, required configure
 
 * get login token
@@ -38,7 +38,7 @@ FIREBASE_TOKEN=anypass
 ```
 
 
-# debug
+# Debug
 ```
 $ npm run serve
 ```
@@ -47,7 +47,7 @@ or
 $ make up
 ```
 
-# test
+# Test
 ```
 $ npm run test
 ```
@@ -56,7 +56,7 @@ or
 make test
 ```
 
-# deploy
+# Deploy
 ```
 $ npm run deploy
 ```
