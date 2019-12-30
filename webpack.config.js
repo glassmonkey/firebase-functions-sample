@@ -12,8 +12,7 @@ module.exports = {
     entry: ["./src/main.js"],
     output: {
         filename: "index.js",
-        path: distDir,
-        libraryTarget: "this"
+        path: distDir
     },
     plugins: [
         //firebaseは各種jsonをfunctions内に入れないといけないのでコピー
