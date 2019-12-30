@@ -1,0 +1,29 @@
+version: '3.7'
+# 開発用のdocker-composeのファイル
+services:
+  node:
+    container_name: firebase-functions-sample-node
+    build:
+      context: .
+    command: npm run start
+    env_file:
+      - .env
+    volumes:
+      - .:/app:cached
+      - node_modules:/app/node_modules
+      - functions:/app/functions
+  functions:
+    container_name: firebase-functions-sample-function
+    build:
+      context: .
+    command: npm run serve
+    ports:
+      - 8080:8080
+      - 9005:9005
+    env_file:
+      - .env
+    volumes:
+      - functions:/app/functions
+volumes:
+  functions:
+  node_modules:
