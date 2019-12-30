@@ -20,17 +20,47 @@ $ npm install
  $ npx firebase login
  ```
 
-# debug in local with emulating firebase functions
+# optional configure 
+Using docker, required configure
+
+* get login token
+```
+$ npx  firebase login:ci
+```
+* copy .env.example to .env
+```
+$ cp .env.example .env
+```
+* replace `anyPass` with `1//***` in `.env`
+```
+FIREBASE_TOKEN=anypass
+->  FIREBASE_TOKEN=1//***
+```
+
+
+# debug
 ```
 $ npm run serve
 ```
+or
+```
+$ make up
+```
 
-# test with jest
+# test
 ```
 $ npm run test
 ```
+or
+```
+make test
+```
 
-# deploy to firebase
+# deploy
 ```
 $ npm run deploy
+```
+or 
+```
+make deploy
 ```
